@@ -17,7 +17,7 @@ But you can still see the code and learn from it.</b>
     <li>Javascript(with advanced ES6 features)</li>
 </ul>
 
-<b>Frameworks that we use:</b>
+<b>Frameworks that I use:</b>
 <ul>
   <li>Fancybox</li>
     <li>smoothScroll.js</li>
