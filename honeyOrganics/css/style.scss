@@ -1,0 +1,29 @@
+
+// resets
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// importing fonts
+@font-face {
+    font-family: 'licorice';
+    src: url(../assets/fonts/Licorice-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'tiltNeon';
+    src: url(../assets/fonts/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf);
+}
+
+// importing partials
+
+@import 'header';
+@import 'about';
+@import 'gallery';
+@import 'price';
+@import 'contact';
+@import 'footer';
+@import 'responsive';
+

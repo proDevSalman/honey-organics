@@ -1,0 +1,111 @@
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/honeybees/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(36,33,36);
+        padding: 2rem;
+        border-radius: 0 0 10px 10px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navbarBrand {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            font-family: 'licorice';
+            font-weight: 600;
+            -moz-font-weight: bold;
+        }
+
+        .navLinks {
+            list-style-type: none;
+
+            display: flex;
+            align-items: center;
+
+            .navLink {
+                font-size: 22px;
+                font-family: licorice;
+                letter-spacing: 2px;
+                font-weight: 600;
+                padding: 6px 12px;
+            }
+        }
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .introSection  {
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .introHeading {
+            color: white;
+            font-size: 4rem;
+            font-family: licorice;
+            letter-spacing: 2px;
+            line-height: 1.5;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452);
+        }
+
+        .introPara {
+            color: white;
+            font-size: 18px;
+            font-family: 'tiltNeon';
+            letter-spacing: 1px;
+            text-align: center;
+            line-height: 1.5;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+
+            .brandName {
+                font-family: 'licorice';
+                font-size: 26px;
+                font-weight: 700;
+                letter-spacing: 2px;            
+            }
+        }
+
+        .infoBtn {
+            font-size: 24px;
+            font-family: licorice;
+            letter-spacing: 2px;
+            font-weight: 600;
+            padding: 6px 20px;
+            background-color: rgb(248, 141, 1);
+            border-radius: 20px;
+            margin: 10px;  
+            transition: transform 300ms ease-out;
+
+            &:hover {
+                transform: translateY(-8px);
+            }
+        }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+

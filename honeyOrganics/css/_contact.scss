@@ -1,0 +1,88 @@
+
+
+.contactSection {
+    min-height: 100vh;
+    background-image: url(../images/honeybees/contactBg.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 10vh 20px;
+    
+    .contactSectionHeading {
+        color: white;
+        font-size: 40px;
+        font-family: licorice;
+        text-align: center;
+        letter-spacing: 3px;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+        margin: 10px 0 0 0;
+    }
+
+    form {
+        width: 90%;
+        max-width: 680px;
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        input, textarea {
+            color: white;
+            font-size: 22px;
+            font-family: tiltNeon;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+            padding: 6px 16px;
+            border: none;
+            border-radius: 30px;
+            margin: 10px;
+        }
+
+        textarea {
+            border-radius: 25px;
+        }
+        
+        ::-webkit-input-placeholder {
+            color:#FFF;
+        }
+
+        ::-moz-placeholder { 
+               color:#FFF;
+             opacity: 1;
+        }
+         
+        ::-ms-input-placeholder { /* IE10+ */
+               color:#FFF;
+        }
+
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+        }
+
+        button {
+            color: white;
+            font-size: 28px;
+            font-family: licorice;
+            font-weight: bold;
+            letter-spacing: 3px;
+            background-color: rgb(123, 48, 192);
+            padding: 8px 20px;
+            border: none;
+            border-radius: 30px;
+            width: 60%;
+            margin: 12px auto;
+            display: block;
+            cursor: pointer;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            transition: transform 300ms ease-out 100ms;
+
+            &:hover {
+                transform: translateY(-8px);
+            }
+        }
+    }
+
+}
+

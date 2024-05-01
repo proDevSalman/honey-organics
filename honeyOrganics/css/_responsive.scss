@@ -1,0 +1,166 @@
+@media screen and (min-width: 1261px) {
+    .carousel {
+        flex-basis: 4in !important;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .accordion {
+        width: 68% !important;
+        height: 530px;
+        flex-direction: row !important;
+        justify-content: center;
+        .accordionItem {
+
+            .accordionBg {
+                width: 30vw !important;
+            }
+            
+            .accordionContent {
+                flex-direction: row !important;
+                
+                .contentBody {
+                    flex: 1 !important;
+                    .price {
+                        
+                        width: 25vw !important;
+                        padding: 45px 4px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .contactSection {
+        background-position: bottom;
+    }
+}
+
+
+@media screen and (max-width: 1260px) {
+    .carousel {
+        flex-basis: 65% !important;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .carousel {
+        flex-basis: 80% !important;
+    }
+
+    .galleryGrid {
+        grid-template-columns: repeat(3, 32%) !important;
+    }
+
+    .accordion {
+        width: 58% !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .carousel {
+        flex-basis: 90% !important;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .navbar {
+        justify-content: center !important;
+        border-radius: 0 0 20px 20px !important;
+        .navLinks {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 10vh;
+            z-index: 11;
+            background-color: rgb(36,33,36);
+    
+            justify-content: space-evenly;
+            padding: 0 1rem;
+            border-radius: 2rem 2rem 0 0;
+
+            .navLink {
+                padding: 0 !important;
+            }
+        }
+        
+    }
+
+    .introSection {
+        width: 80% !important;
+
+        .introHeading {
+            font-size: 2.5rem !important;
+            line-height: 1.5 !important;
+        }
+
+        .introPara {
+            line-height: 1.5 !important;
+        }
+    }
+
+    .contentContainer {
+        justify-content: center;
+
+        .textContainer {
+            display: none;
+            .productionProcess {
+                display: none;
+            }
+        }
+
+        .carouselContainer {
+            flex-basis: 70% !important;
+            .carousel {
+                flex-basis: 100% !important;
+            }
+        }
+
+    }
+
+    .finally {
+        display: none;
+    }
+
+    .galleryGrid {
+        grid-template-columns: repeat(2, 45%) !important;
+    }
+
+    .accordion {
+        width: 64% !important;
+    }
+    
+    .footerSection {
+        padding-bottom: calc(10vh + 10px) !important;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .contentContainer {
+        .carouselContainer {
+            flex-basis: 100% !important;
+            .carousel {
+                flex-basis: 100% !important;
+            }
+        }
+    }
+
+    .galleryGrid {
+        grid-template-columns: repeat(1, 90%) !important;
+    }
+
+    .accordion {
+        width: 85% !important;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .navLinks {
+        padding: 5px !important;
+    }
+    
+}

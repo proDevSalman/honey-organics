@@ -1,0 +1,524 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "licorice";
+  src: url(../assets/fonts/Licorice-Regular.ttf);
+}
+@font-face {
+  font-family: "tiltNeon";
+  src: url(../assets/fonts/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf);
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/honeybees/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(36, 33, 36);
+  padding: 2rem;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navbar .navbarBrand {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-family: "licorice";
+  font-weight: 600;
+  -moz-font-weight: bold;
+}
+.header .navbar .navLinks {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.header .navbar .navLinks .navLink {
+  font-size: 22px;
+  font-family: licorice;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: 6px 12px;
+}
+.header .introSection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .introSection .introHeading {
+  color: white;
+  font-size: 4rem;
+  font-family: licorice;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452);
+}
+.header .introSection .introPara {
+  color: white;
+  font-size: 18px;
+  font-family: "tiltNeon";
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+.header .introSection .introPara .brandName {
+  font-family: "licorice";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.header .introSection .infoBtn {
+  font-size: 24px;
+  font-family: licorice;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: 6px 20px;
+  background-color: rgb(248, 141, 1);
+  border-radius: 20px;
+  margin: 10px;
+  transition: transform 300ms ease-out;
+}
+.header .introSection .infoBtn:hover {
+  transform: translateY(-8px);
+}
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.aboutSection {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10vh 20px;
+  background-color: rgb(21, 20, 22);
+}
+.aboutSection .aboutSectionHeading {
+  color: white;
+  font-size: 40px;
+  font-family: licorice;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 16px 0;
+}
+.aboutSection .contentContainer {
+  padding: 10px 20px;
+  display: flex;
+}
+.aboutSection .contentContainer .textContainer {
+  flex-basis: 50%;
+  padding: 10px;
+}
+.aboutSection .contentContainer .textContainer .productionProcess {
+  color: white;
+  font-size: 22px;
+  font-family: licorice;
+  font-weight: bold;
+  letter-spacing: 2px;
+  list-style-type: none;
+  text-align: justify;
+  padding-right: 10px;
+}
+.aboutSection .contentContainer .textContainer .productionProcess li {
+  margin: 5px 0;
+}
+.aboutSection .contentContainer .textContainer .productionProcess li .underline {
+  text-decoration: underline;
+  font-size: 26px;
+}
+.aboutSection .contentContainer .carouselContainer {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.aboutSection .contentContainer .carouselContainer .carousel {
+  display: flex;
+  transition: transform 800ms ease-out;
+}
+.aboutSection .contentContainer .carouselContainer .carousel .slide {
+  flex-basis: 100%;
+  flex-shrink: 0;
+}
+.aboutSection .contentContainer .carouselContainer .carousel .slide img {
+  width: 100%;
+  display: block;
+}
+.aboutSection .finally {
+  color: white;
+  font-size: 24px;
+  font-family: licorice;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+.gallerySection {
+  background-color: black;
+  padding: 10vh 0;
+}
+.gallerySection .gallerySectionHeading {
+  color: white;
+  font-size: 36px;
+  font-family: licorice;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 20px 0;
+}
+.gallerySection .galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  justify-content: center;
+  align-items: center;
+}
+.gallerySection .galleryGrid .galleryImg {
+  margin: 20px 10px;
+  cursor: pointer;
+}
+.gallerySection .galleryGrid .galleryImg img {
+  width: 100%;
+  display: block;
+}
+
+.priceSection {
+  background-color: rgb(53, 53, 53);
+  width: 100%;
+  min-height: 100vh;
+  padding: 10vh 20px;
+}
+.priceSection .priceSectionHeading {
+  color: white;
+  font-size: 36px;
+  font-family: licorice;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 10px 0;
+}
+.priceSection .accordion {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.priceSection .accordion .accordionItem {
+  position: relative;
+  flex-basis: 60px;
+  flex-shrink: 0;
+  margin: 10px;
+  border-radius: 32px 32px 32px 32px;
+  overflow: hidden;
+  transition: flex-basis 1.5s ease-out;
+}
+.priceSection .accordion .accordionItem .accordionBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.priceSection .accordion .accordionItem .accordionBg img {
+  width: 100%;
+  display: block;
+}
+.priceSection .accordion .accordionItem .accordionContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.priceSection .accordion .accordionItem .accordionContent .contentHeader {
+  flex-basis: 60px;
+}
+.priceSection .accordion .accordionItem .accordionContent .contentHeader .magnitude {
+  width: 47px;
+  height: 47px;
+  background-color: rgb(252, 245, 247);
+  padding: 7px;
+  border-radius: 50%;
+  margin: 5px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.priceSection .accordion .accordionItem .accordionContent .contentHeader .magnitude img {
+  width: 100%;
+  display: block;
+}
+.priceSection .accordion .accordionItem .accordionContent .contentBody {
+  flex-basis: auto;
+  position: relative;
+}
+.priceSection .accordion .accordionItem .accordionContent .contentBody .price {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 28px;
+  font-family: licorice;
+  letter-spacing: 3px;
+  padding: 30px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 800ms ease-out 200ms;
+}
+.priceSection .accordion .accordionItem .accordionContent .contentBody .price .purchaseButton {
+  color: white;
+  font-size: 26px;
+  letter-spacing: 3px;
+  font-family: licorice;
+  font-weight: bold;
+  background-color: rgb(226, 128, 0);
+  padding: 5px 20px;
+  border-radius: 26px;
+  display: block;
+  cursor: pointer;
+  margin: 12px 5px;
+  border: 2px solid white;
+}
+.priceSection .accordion .accordionItem .accordionContent .contentBody .price .purchaseButton:focus {
+  outline: none;
+}
+.priceSection .accordion .accordionItem .accordionContent .contentBody .visible {
+  opacity: 1;
+  transition-delay: 600ms;
+}
+
+.contactSection {
+  min-height: 100vh;
+  background-image: url(../images/honeybees/contactBg.jpg);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: 10vh 20px;
+}
+.contactSection .contactSectionHeading {
+  color: white;
+  font-size: 40px;
+  font-family: licorice;
+  text-align: center;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+  margin: 10px 0 0 0;
+}
+.contactSection form {
+  width: 90%;
+  max-width: 680px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contactSection form input, .contactSection form textarea {
+  color: white;
+  font-size: 22px;
+  font-family: tiltNeon;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  padding: 6px 16px;
+  border: none;
+  border-radius: 30px;
+  margin: 10px;
+}
+.contactSection form textarea {
+  border-radius: 25px;
+}
+.contactSection form ::-webkit-input-placeholder {
+  color: #FFF;
+}
+.contactSection form ::-moz-placeholder {
+  color: #FFF;
+  opacity: 1;
+}
+.contactSection form ::-ms-input-placeholder { /* IE10+ */
+  color: #FFF;
+}
+.contactSection form input:focus,
+.contactSection form textarea:focus {
+  outline: none;
+}
+.contactSection form button {
+  color: white;
+  font-size: 28px;
+  font-family: licorice;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background-color: rgb(123, 48, 192);
+  padding: 8px 20px;
+  border: none;
+  border-radius: 30px;
+  width: 60%;
+  margin: 12px auto;
+  display: block;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  transition: transform 300ms ease-out 100ms;
+}
+.contactSection form button:hover {
+  transform: translateY(-8px);
+}
+
+.footerSection {
+  color: white;
+  font-family: tiltNeon;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.5;
+  background-color: black;
+  padding: 10px 20px;
+  width: 100%;
+}
+.footerSection .copyRigth {
+  font-weight: bold;
+}
+.footerSection .brandName {
+  font-size: 22px;
+  font-family: licorice;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+@media screen and (min-width: 1261px) {
+  .carousel {
+    flex-basis: 4in !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .accordion {
+    width: 68% !important;
+    height: 530px;
+    flex-direction: row !important;
+    justify-content: center;
+  }
+  .accordion .accordionItem .accordionBg {
+    width: 30vw !important;
+  }
+  .accordion .accordionItem .accordionContent {
+    flex-direction: row !important;
+  }
+  .accordion .accordionItem .accordionContent .contentBody {
+    flex: 1 !important;
+  }
+  .accordion .accordionItem .accordionContent .contentBody .price {
+    width: 25vw !important;
+    padding: 45px 4px !important;
+  }
+  .contactSection {
+    background-position: bottom;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .carousel {
+    flex-basis: 65% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .carousel {
+    flex-basis: 80% !important;
+  }
+  .galleryGrid {
+    grid-template-columns: repeat(3, 32%) !important;
+  }
+  .accordion {
+    width: 58% !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .carousel {
+    flex-basis: 90% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: center !important;
+    border-radius: 0 0 20px 20px !important;
+  }
+  .navbar .navLinks {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 11;
+    background-color: rgb(36, 33, 36);
+    justify-content: space-evenly;
+    padding: 0 1rem;
+    border-radius: 2rem 2rem 0 0;
+  }
+  .navbar .navLinks .navLink {
+    padding: 0 !important;
+  }
+  .introSection {
+    width: 80% !important;
+  }
+  .introSection .introHeading {
+    font-size: 2.5rem !important;
+    line-height: 1.5 !important;
+  }
+  .introSection .introPara {
+    line-height: 1.5 !important;
+  }
+  .contentContainer {
+    justify-content: center;
+  }
+  .contentContainer .textContainer {
+    display: none;
+  }
+  .contentContainer .textContainer .productionProcess {
+    display: none;
+  }
+  .contentContainer .carouselContainer {
+    flex-basis: 70% !important;
+  }
+  .contentContainer .carouselContainer .carousel {
+    flex-basis: 100% !important;
+  }
+  .finally {
+    display: none;
+  }
+  .galleryGrid {
+    grid-template-columns: repeat(2, 45%) !important;
+  }
+  .accordion {
+    width: 64% !important;
+  }
+  .footerSection {
+    padding-bottom: calc(10vh + 10px) !important;
+  }
+}
+@media screen and (max-width: 430px) {
+  .contentContainer .carouselContainer {
+    flex-basis: 100% !important;
+  }
+  .contentContainer .carouselContainer .carousel {
+    flex-basis: 100% !important;
+  }
+  .galleryGrid {
+    grid-template-columns: repeat(1, 90%) !important;
+  }
+  .accordion {
+    width: 85% !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .navLinks {
+    padding: 5px !important;
+  }
+}/*# sourceMappingURL=style.css.map */

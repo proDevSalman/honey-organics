@@ -1,0 +1,31 @@
+
+
+.gallerySection {
+    background-color: black;
+    padding: 10vh 0;
+
+    .gallerySectionHeading {
+        color: white;
+        font-size: 36px;
+        font-family: licorice;
+        letter-spacing: 3px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .galleryGrid {
+        display: grid;
+        grid-template-columns: repeat(4, 23%);
+        // grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+        .galleryImg {
+            margin: 20px 10px;
+            cursor: pointer;
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
